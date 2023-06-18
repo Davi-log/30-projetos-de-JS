@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+*{
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Outfit', sans-serif;
+    background-color: black;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/* perfil */
+.perfil{
+    position: relative;
+    top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h1{
+    color: yellow;
+}
+
+.container img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.container .perfis a{
+    font-size: 2rem;
+    color: #fff;
+}
+/*fim*/
+
+/* Principal/Links */
+.links{
+    position: relative;
+    top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.links div{
+    width: 40rem;
+    height: 4rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(1px);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links div a{
+    font-family: 'Overpass', sans-serif;
+    text-decoration: none;
+    color: #fff;
+}
+
+.links div a .html{
+    color: #f06529;
+    font-weight: 900;
+}
+
+.links div a .css{
+    color: #2965f1;
+    font-weight: 900;
+}
+/*fim*/
+
+/*footer*/
+footer{
+    position: relative;
+    top: 3rem;
+}
+
+footer p{
+    color: #fff;
+}
+footer p span{
+    color: rgb(115, 240, 240);
+    font-weight: 700;
+}
+
+/*fim*/
+
+@media (max-width: 772px){
+    .perfil .container img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .perfil .container h1{
+        font-size: 2rem;
+    }
+
+    .perfil .container .perfis a{
+        font-size: 1.5rem;
+    }
+
+    .links div{
+        width: 25rem;
+        height: 4rem;
+    }
+
+    .links div h1{
+        font-size: 1.5rem;
+    }
+}
+
+
+@media (max-width: 414px){
+    .perfil .container img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .perfil .container h1{
+        font-size: 2rem;
+    }
+
+    .perfil .container .perfis a{
+        font-size: 1.5rem;
+    }
+
+    .links div{
+        width: 20rem;
+        height: 4rem;
+    }
+
+    .links div h1{
+        font-size: 1.2rem;
+    }
+}

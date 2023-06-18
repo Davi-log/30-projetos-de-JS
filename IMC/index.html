@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Índice de Massa Corporal - IMC</title>
+    <!--========= CSS =========-->
+    <link rel="stylesheet" href="CSS/Style.css">
+    <!--======== Favicon ========-->
+    <link rel="shortcut icon" href="Favicon/favicon-16x16.png" type="image/x-icon">
+    <!--======== Unicons ========-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+<body>
+    <main class="container">
+
+        <section class="calculator">
+            <form id="form">
+                <h1 class="title">
+                    Índice de Massa Corporal - IMC 
+                </h1>
+
+                <div class="input-box">
+                    <label for="weight">
+                        Peso em Kg
+                    </label>
+                    <div class="input-field">
+                        <i class="uil uil-weight"></i>
+                        <input type="number" step="0.01" id="weight" required>
+                        <span>Kg</span>
+                    </div>
+                </div>
+                
+                <div class="input-box">
+                    <label for="height">
+                        Sua altura em Metros
+                    </label>
+                    <div class="input-field">
+                        <i class="uil uil-ruler"></i>
+                        <input type="number" step="0.01"  id="height" required>
+                        <span>M</span>
+                    </div>
+                </div>
+
+                <button id="calculate">
+                    Calcular
+                </button>
+        
+            </form>
+
+            <div id="infos" class="hidden">
+
+                <div id="result">
+                    <div id="bmi">
+                        <span id="value"></span>
+                        <span>Seu IMC</span>
+                    </div>
+                    <div id="description">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div id="more_info">
+                    <a href="">Mais informaçoes sobre o IMC<i class="uil uil-external-link-alt"></i></a>
+                </div>
+
+            </div>
+
+        </section>
+      
+    </main>
+    <script src="JS/script.js"></script>
+</body>
+</html>
