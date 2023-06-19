@@ -21,17 +21,19 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 /*========= Main =========*/
 .container{
-    width: 100vw;
-    height: 100vh;
+    width: 95vw;
+    height: 98vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background: url(../img/8513345.jpg) no-repeat center center;
     background-size: 100vw 100vh;
+    overflow: hidden;
 }
 
 
@@ -40,7 +42,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 1rem;
+    padding: 2.5rem;
     background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(3px);
     border-radius: 10px;
@@ -136,8 +138,7 @@ body{
 
 #result{
     display: flex;
-    align-items: center;
-    gap: 2rem;
+    align-items: center; 
     border-top: 1px solid #ffffff34;
     padding: 0.75rem 0;
 }
@@ -146,7 +147,7 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
-    font-size: 2.25rem;
+    font-size: 2rem;
     color: #fff;
     font-family: var(--font-title);
 }
@@ -157,8 +158,9 @@ body{
 }
 
 #description{
-    width: 15.5rem;
+    width: 13rem;
     color: #fff;
+    font-size: 0.87rem;
     font-family: var(--font-p);
 }
 
@@ -194,4 +196,68 @@ body{
 
 .attention{
     color: #dc2626;
+}
+
+@media (min-width: 414px){
+    .container{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        background: url(../img/8513345.jpg) no-repeat center center;
+        background-size: 100vw 100vh;
+    }
+
+    .title{    
+        font-size: 2rem;
+    }
+
+    .input-box label{
+        font-size: 1.5rem;
+    }
+    
+    .input-field span,
+    .input-field i{
+    font-size: 1.5rem;
+    }
+
+    .input-field input{
+        font-size: 2rem;
+    }
+
+    #calculate{
+        font-size: 2rem;
+    }
+
+    #bmi{
+        font-size: 3rem;
+    }
+
+    #bmi span:last-child{
+        font-size: 1.5rem;
+    }
+    
+    #description{
+        margin-left: 1rem;
+        font-size: 1.5rem;
+    }
+
+    #more_info a{
+        font-size: 1.5rem;
+        
+    }
+}
+
+@media (min-width: 717px){
+    .container{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        background: url(../img/8513345.jpg) no-repeat center center;
+        background-size: 60%;
+        margin-right: 3rem;
+    }
 }

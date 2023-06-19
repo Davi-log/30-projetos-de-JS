@@ -18,13 +18,8 @@ body{
     justify-content: center;
     flex-direction: column;
 }
+
 /* perfil */
-.perfil{
-    position: relative;
-    top: 1rem;
-    display: flex;
-    justify-content: center;
-}
 
 .container{
     display: flex;
@@ -35,12 +30,6 @@ body{
 
 .container h1{
     color: yellow;
-}
-
-.container img{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
 }
 
 .container .perfis a{
