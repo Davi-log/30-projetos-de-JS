@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+/*============ base ============*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(100deg, rgba(58,59,61,1) 0%, rgba(9,12,19,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*============ Modos ============*/
+.modes{
+    position: absolute;
+    top: 1rem;
+    width: 300px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(9,12,19,1) 0%,
+                rgba(58,59,61,1) 100%);
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    gap: 2rem;
+}
+
+.modes button{
+    background-color: #fff;
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modes button i{
+    font-size: 20px;
+}
+
+.modes button:hover{
+    transform: scale(1.1);
+    color: #CCDBD4;
+}
+
+/*============ relogio digital ============*/
+.digital-watch{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 550px;
+    background: transparent;
+    border-radius: 3px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);
+}
+
+.digital-watch div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 150px;
+    color: #fff;
+    background: rgba(5, 5, 5, 0.9);
+    border-radius: 7px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    letter-spacing: 3px;
+}
+
+.digital-watch span{
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+.digital-watch span.time{
+    font-size: 15px;
+}
+.hidden{ 
+    display: none;
+}
+
+.hidden2{ 
+    display: none;
+}
+/*============ relogio analogico ============*/
+.analog-clock{
+    display: block;
+}
+.clock{
+    min-width: 500px;
+    min-height: 500px;
+    background: #fff;
+    border-radius: 50%;
+    border:  5px solid #3A3B3D;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-hand{
+    width: 3px;
+    height: 120px;
+    background: red;
+    border-radius: 15px;
+    transform: translate(0, -50%) rotate(10deg);
+    transform-origin: bottom center;
+}
+
+.minute-hand{
+    width: 3px;
+    height: 150px;
+    background: green;
+    border-radius: 15px;
+    transform: translateY(-50%) rotate(5deg);
+    transform-origin: bottom center;
+}
+
+.hour-hand{
+    width: 3px;
+    height: 190px;
+    background: black;
+    border-radius: 15px;
+    transform: translate(0,-50%) rotate(0deg);
+    transform-origin: bottom center;
+}
+
+.center{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: silver;
+    position: absolute;
+}
+
+.number{
+    font-size: 1.5rem;
+    font-weight: 700;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.number-1{
+    transform: rotate(30deg);
+}
+
+.number-2{
+    transform: rotate(60deg);
+}
+
+.number-3{
+    transform: rotate(90deg);
+}
+
+.number-4{
+    transform: rotate(120deg);
+}
+
+.number-5{
+    transform: rotate(150deg);
+}
+
+.number-6{
+    transform: rotate(180deg);
+}
+
+.number-7{
+    transform: rotate(210deg);
+}
+
+.number-8{
+    transform: rotate(240deg);
+}
+
+.number-9{
+    transform: rotate(270deg);
+}
+
+.number-10{
+    transform: rotate(300deg);
+}
+
+.number-11{
+    transform: rotate(330deg);
+}
+
+.number-12{
+    transform: rotate(360deg);
+}
+
+
+
+

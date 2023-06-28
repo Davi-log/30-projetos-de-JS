@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="style.css">
+    <!--========== unicons ==========-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!--========== title ==========-->
+    <title>Relógio</title>
+
+</head>
+<body>
+    <div class="modes">
+        <button id="digitalmode"><i class="uil uil-watch"></i>Modo digital</button>
+        <button id="analogmode"><i class="uil uil-clock"></i>Modo analogico</button>
+    </div>
+
+    <main class="digital-watch hidden">
+        <div>
+            <span id="hours">00</span>
+            <span class="time">Horas</span>
+        </div>
+
+        <div>
+            <span id="minute">00</span>
+            <span class="time">Minutos</span>
+        </div>
+
+        <div>
+            <span id="second">00</span>
+            <span class="time">Segundos</span>
+        </div>
+    </main>
+
+    <main class="analog-clock hidden2">
+        <div class="clock">
+            <div class="hour-hand"></div>
+            <div class="minute-hand"></div>
+            <div class="second-hand"></div>
+            <div class="center"></div>
+
+            <span class="number number-1">1</span>
+            <span class="number number-2">2</span>
+            <span class="number number-3">3</span>
+            <span class="number number-4">4</span>
+            <span class="number number-5">5</span>
+            <span class="number number-6">6</span>
+            <span class="number number-7">7</span>
+            <span class="number number-8">8</span>
+            <span class="number number-9">9</span>
+            <span class="number number-10">10</span>
+            <span class="number number-11">11</span>
+            <span class="number number-12">12</span>
+        </div>
+    </main>
+    <!--========== JS ==========-->
+    <script src="digital-script.js"></script>
+    
+</body>
+</html>
