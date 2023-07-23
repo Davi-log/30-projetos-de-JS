@@ -98,12 +98,13 @@ body{
     display: block;
 }
 .clock{
-    min-width: 500px;
-    min-height: 500px;
+    min-width: 400px;
+    min-height: 400px;
     background: #fff;
     border-radius: 50%;
     border:  5px solid #3A3B3D;
     position: relative;
+    top: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -129,7 +130,7 @@ body{
 
 .hour-hand{
     width: 3px;
-    height: 190px;
+    height: 140px;
     background: black;
     border-radius: 15px;
     transform: translate(0,-50%) rotate(0deg);
